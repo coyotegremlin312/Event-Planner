@@ -18,18 +18,17 @@ app.use(function(req, res, next) {
 //     res.end();
 // })
 
-app.get('/', 
+app.get('/events', 
     getNames.getDatabaseComedians,
     getNames.getDatabasePerformers,
     scrapeController.getComedyStore,
     scrapeController.getIceHouse)
 
+app.get('/ticketmasterevents',
+    getNames.getDatabasePerformers,
+    search.searchEvents,
+)
 
-// grab data from db
-// get data from api using db data
-// format dat for frontend
-// send
-
-app.listen(3000);
+app.listen(5000);
 
 module.exports = app;

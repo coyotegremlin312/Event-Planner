@@ -76,3 +76,18 @@
   text-align: center;
   padding-top: 10px;
 }
+
+.signature {
+  width: 450px;
+  border-bottom: 3px solid;
+  padding-bottom: 10px;
+}
+
+.Performer {
+  color: #CB0000;
+}
+
+.Link {
+  color: lightgray;
+  font-weight: bold;
+}

@@ -82,6 +82,7 @@ class ComedyStore extends Component {
     super(props);
 
     this.state = {
+      loading: true,
       comedianList: [],
       comedians: '',
       error: ''
@@ -93,34 +94,40 @@ class ComedyStore extends Component {
   }
 
   displayComedyBoard = (event) => {
-    const URL = "http://localhost:3000/"
+    const URL = "http://localhost:5000/events"
     fetch(URL)
       .then((res) => {
+        return res.json()
+      }).then((data) => {
+        console.log(data)
         let comedians = [];
-        for(let i = 0; i < res.length; i++){
-          if(res[i].date){
-            comedians.push(res[i])
+        for(let i = 0; i < data.length; i++){
+          if(data[i].date){
+            comedians.push(data[i])
           }
         }
         this.setState({ comedians: comedians })
       })
       .then(() => {
         const comedianList = this.state.comedians.map(this.createList)
-        this.setState({ comedianList })
+        this.setState({ comedianList, loading: false })
       })
   }
 
-  createList = (event) => {
+  createList = (event, index) => {
     return (
-      <div key={event._id} className="signature">
+      <div key={index} className="signature">
         <h1 className="Performer">{event.performer}</h1>
         <h2 className="Date">{event.date}</h2>
-        <h2 className="Link">{event.link}</h2>
+        <a href={event.link} className="Link">Event Info</a>
       </div>
     )
   }
 
   render() {
+    if(this.state.loading === true){
+      return "Loading"
+    }
     return (
       <div className="EventList">
         <header className="EventHeader">
