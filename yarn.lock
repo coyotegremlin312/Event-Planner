@@ -1271,6 +1271,11 @@ signal-exit@^3.0.0:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
   integrity sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
 
+simple-rate-limiter@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/simple-rate-limiter/-/simple-rate-limiter-0.2.3.tgz#306466faff17e1f22ee758b0a37cd453e8351b41"
+  integrity sha1-MGRm+v8X4fIu51iwo3zUU+g1G0E=
+
 spawn-command@^0.0.2-1:
   version "0.0.2-1"
   resolved "https://registry.yarnpkg.com/spawn-command/-/spawn-command-0.0.2-1.tgz#62f5e9466981c1b796dc5929937e11c9c6921bd0"
