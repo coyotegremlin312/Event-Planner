@@ -53,13 +53,24 @@
 }
 
 .TheEvents {
-  min-width: 450px;
-  min-height: 450px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-content: center;
   flex-wrap: wrap;
+}
+
+.ComedyStoreList{
+  min-width: 450px;
+}
+
+.IceHouseList{
+  min-width: 450px;
+  height: 400px;
+}
+
+.TicketMasterList{
+  min-width: 450px;
 }
 
 .EventList {
