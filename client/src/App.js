@@ -94,7 +94,7 @@ class ComedyStore extends Component {
   }
 
   displayComedyBoard = (event) => {
-    const URL = "http://localhost:5000/events"
+    const URL = "https://peaceful-forest-71977.herokuapp.com/events"
     fetch(URL)
       .then((res) => {
         return res.json()

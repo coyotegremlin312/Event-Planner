@@ -11,10 +11,6 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-app.get('/', (req, res) => {
-    res.send('It is on like Donkey Kong');
-})
-
 app.get('/events', 
     getNames.getDatabaseComedians,
     getNames.getDatabasePerformers,
