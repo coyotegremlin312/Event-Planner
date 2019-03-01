@@ -1,6 +1,7 @@
 'use strict';
 
 const express = require('express');
+const path = require('path');
 const app = express();
 const scrapeController = require('./scraper.js');
 const search = require('./ticketmaster.js');
