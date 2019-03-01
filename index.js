@@ -5,6 +5,7 @@ const app = express();
 const scrapeController = require('./scraper.js');
 const search = require('./ticketmaster.js');
 const getNames = require("./firebaseServer.js");
+let _ = require('underscore');
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 
