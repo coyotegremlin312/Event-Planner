@@ -2,11 +2,12 @@
 
 const express = require('express');
 const path = require('path');
-const app = express();
 const scrapeController = require('./scraper.js');
 const search = require('./ticketmaster.js');
 const getNames = require("./firebaseServer.js");
 let _ = require('underscore');
+let PORT = process.env.PORT || 5000;
+const app = express();
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 
@@ -25,6 +26,6 @@ app.get('/ticketmasterevents',
     search.searchEvents,
 )
 
-app.listen(5000);
+app.listen(PORT);
 
 module.exports = app;
