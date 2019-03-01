@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
+    "start": "nodemon index.js",
     "client": "cd client && yarn start",
     "dev": "concurrently \"yarn start\" \"yarn client\"",
     "heroku-postbuild": "cd client && yarn install && yarn run build"

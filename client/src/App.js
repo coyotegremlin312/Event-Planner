@@ -156,7 +156,7 @@ class IceHouse extends Component {
   }
 
   displayComedyBoard = (event) => {
-    const URL = "http://localhost:5000/events"
+    const URL = "https://peaceful-forest-71977.herokuapp.com/events"
     fetch(URL)
       .then((res) => {
         return res.json()
@@ -217,7 +217,7 @@ class Ticketmaster extends Component {
   }
 
   displayEventsBoard = (event) => {
-    const URL = "http://localhost:5000/ticketmasterevents"
+    const URL = "https://peaceful-forest-71977.herokuapp.com/ticketmasterevents"
     fetch(URL)
       .then((res) => {
         return res.json()

@@ -12,11 +12,11 @@ app.use(function(req, res, next) {
     next();
 });
 
-// app.get('/', (req, res) => {
-//     res.setHeader("Content-Type", "application/json");
-//     res.send('It is on like Donkey Kong');
-//     res.end();
-// })
+app.get('/', (req, res) => {
+    res.setHeader("Content-Type", "application/json");
+    res.send('It is on like Donkey Kong');
+    res.end();
+})
 
 app.get('/events', 
     getNames.getDatabaseComedians,
