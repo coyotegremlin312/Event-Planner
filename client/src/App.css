@@ -57,24 +57,23 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-content: center;
-  flex-wrap: wrap;
 }
 
 .ComedyStoreList{
-  min-width: 450px;
+  min-width: 1000px;
 }
 
 .IceHouseList{
-  min-width: 450px;
+  min-width: 1000px;
 }
 
 .TicketMasterList{
-  min-width: 450px;
+  min-width: 1000px;
 }
 
 .EventList {
   margin-top: 10px;
-  min-width: 450px;
+  min-width: 1000px;
   border: 3px solid;
 }
 
@@ -88,7 +87,7 @@
 }
 
 .signature {
-  width: 450px;
+  width: 1000px;
   border-bottom: 3px solid;
   padding-bottom: 10px;
 }
